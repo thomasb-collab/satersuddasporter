@@ -11,15 +11,26 @@ const MembershipSection = () => {
         Skriv namn och fullständigt personnummer vid betalning så att vi kan få in LOK-stödbidrag.
       </p>
 
+      <div className="flex flex-col sm:flex-row gap-[2px] max-w-2xl mx-auto mb-12">
+        <div className="flex-1 border-2 border-sus-white/30 p-6">
+          <p className="text-[0.65rem] tracking-[0.3em] uppercase mb-2" style={{ color: "rgba(245,240,232,0.6)" }}>
+            Bankgiro (ingen avgift)
+          </p>
+          <p className="font-display text-sus-white text-4xl tracking-[0.05em]">5568-2827</p>
+        </div>
+        <div className="flex-1 border-2 border-sus-white/30 p-6">
+          <p className="text-[0.65rem] tracking-[0.3em] uppercase mb-2" style={{ color: "rgba(245,240,232,0.6)" }}>
+            Swish
+          </p>
+          <p className="font-display text-sus-white text-4xl tracking-[0.05em]">123 070 57 80</p>
+        </div>
+      </div>
+
       <a href="#" className="inline-block border-[3px] border-sus-white p-2 no-underline group">
         <span className="block bg-sus-white text-sus-red py-5 px-16 font-display text-2xl tracking-[0.2em] transition-colors duration-200 group-hover:bg-transparent group-hover:text-sus-white">
           BLI MEDLEM
         </span>
       </a>
-
-      <p className="mt-8 text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(245,240,232,0.5)" }}>
-        Från 199 kr/mån — Ingen bindningstid
-      </p>
     </section>
   );
 };
