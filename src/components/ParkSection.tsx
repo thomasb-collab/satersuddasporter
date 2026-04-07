@@ -1,8 +1,8 @@
 const zones = [
-  { icon: "🛹", name: "Bowl Zone", desc: "Klassisk betongbowl med pool coping. Från snake run till deep end — allt handgjutet." },
-  { icon: "🏃", name: "Parkour Court", desc: "Modulära hinder i trä och stål. Precision jumps, wall runs och cat leaps." },
-  { icon: "🥏", name: "Disc Arena", desc: "Indoor frisbeegolf med 9 korgar. Teknisk bana med elevation changes." },
-  { icon: "🤸", name: "Flow Park", desc: "Slacklines, balanslinor och tumbling-mattor. Öppen yta för fri rörelse." },
+  { icon: "🛹", name: "Bowlen", desc: "Klassisk betongbowl med pool coping. Från snake run till deep end — allt handgjutet." },
+  { icon: "🏃", name: "Snaken", desc: "En slingrande bana att köra i flow. Perfekt för att bygga hastighet och pumpa kurvor." },
+  { icon: "🥏", name: "Streetyta", desc: "Klassiska gatuelement – ledges, rails och flatmark. Här tränar du tricks och grinds i urban miljö." },
+  { icon: "🤸", name: "Ramperna", desc: "Kör transition i någon av våra tre ramper. Vi har en mindre ramp och två större för mer erfarna åkare." },
 ];
 
 const ParkSection = () => {
@@ -10,11 +10,11 @@ const ParkSection = () => {
     <section className="bg-sus-bg" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
         <div>
-          <p className="label-text">Anläggningen</p>
-          <h2 className="section-title mb-0">Parken</h2>
+          <p className="label-text">PELLEPARKEN</p>
+          <h2 className="section-title mb-0">Parkens<br />zoner</h2>
         </div>
         <p className="text-[0.95rem] leading-[1.8] max-w-[40ch]" style={{ color: "rgba(245,240,232,0.6)" }}>
-          2400 kvadratmeter av betong, trä och stål — designat för dem som rör sig annorlunda.
+          En modern betonganläggning byggd av Beaver Concrete. Parken har något förbåde nybörjare och erfarna åkare – från snakerun och streetyta till bowl och ramper.
         </p>
       </div>
 
