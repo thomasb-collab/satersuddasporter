@@ -1,10 +1,10 @@
 const rules = [
   { num: "01", text: "Parken är en avancerad idrotts- och aktivitetsyta. All aktivitet sker på egen risk." },
   { num: "02", text: "Hjälm är obligatoriskt för åkare under 16 år. Vi uppmanar alla att skydda skallen." },
-  { num: "03", text: "Vänta på din tur. Kolla innan du droppar in. Ögonkontakt räcker." },
-  { num: "04", text: "Ingen mat eller dryck i aktivitetszonerna. Häng i loungen istället." },
-  { num: "05", text: "Plocka upp efter dig. Broken gear rapporteras i receptionen, vi fixar det." },
-  { num: "06", text: "Ha kul. Det är bokstavligen det enda syftet med hela stället." },
+  { num: "03", text: "Vårdnadshavare ansvarar för sina barn. Yngre barn ska ha en vuxen med sig. Parken är inte en lekplats!" },
+  { num: "04", text: "Inga motordrivna fordon är tillåtna." },
+  { num: "05", text: "Håll parken ren och fin-ta hand om ditt skräp." },
+  { num: "06", text: "All skadegörelse och klotter polisanmäls! Det är föreningens medlemmar som får betala." },
 ];
 
 const RulesSection = () => {
@@ -22,7 +22,7 @@ const RulesSection = () => {
             >
               {r.num}
             </div>
-            <p className="text-sm leading-[1.75]" style={{ color: "rgba(245,240,232,0.65)" }}>
+            <p className="text-sm leading-[1.75] font-normal" style={{ color: "rgba(245,240,232,0.65)" }}>
               {r.text}
             </p>
           </div>
