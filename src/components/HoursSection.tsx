@@ -1,8 +1,6 @@
 const schedule = [
-  { day: "\n", time: "15:00 – 21:00" },
-  { day: "Lördag", time: "10:00 – 20:00" },
-  { day: "Söndag", time: "10:00 – 18:00" },
-  { day: "Helgdagar", time: "12:00 – 17:00" },
+  { day: "Alla åkare", time: "07:00 – 17:00" },
+  { day: "Erfarna åkare", time: "17:00 – 22:00" },
 ];
 
 const HoursSection = () => {
