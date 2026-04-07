@@ -27,7 +27,7 @@ const HoursSection = () => {
         </table>
 
         <div className="mt-6 p-5 text-sm leading-[1.7] tracking-[0.03em]" style={{ background: "rgba(13,13,13,0.1)" }}>
-          Parken är ppen alla dagar. Nybörjare och mindre barn kan med fördel åka på förmiddagarna då det brukar vara lite lugnare i parken.
+          Parken är öppen alla dagar. Nybörjare och mindre barn kan med fördel åka på förmiddagarna då det brukar vara lite lugnare i parken.
         </div>
       </div>
     </section>
