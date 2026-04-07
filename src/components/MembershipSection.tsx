@@ -6,7 +6,9 @@ const MembershipSection = () => {
         Bli medlem
       </h2>
       <p className="text-base leading-[1.8] max-w-[55ch] mx-auto mt-6 mb-12" style={{ color: "rgba(245,240,232,0.8)" }}>
-        Medlemskap ger obegränsad tillgång till alla zoner, prioriterad bokning för events och workshops, plus tillgång till vår community-app där vi delar clips och planerar sessions.
+        Medlemsavgift är endast 50 kr per person för ett helt år – eller valfritt högre belopp för att stödja föreningen ytterligare. Som medlem ingår olycksfallsförsäkring i Folksam!
+        <br /><br />
+        Skriv namn och fullständigt personnummer vid betalning så att vi kan få in LOK-stödbidrag.
       </p>
 
       <a href="#" className="inline-block border-[3px] border-sus-white p-2 no-underline group">
