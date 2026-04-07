@@ -25,7 +25,7 @@ const AboutSection = () => {
           style={{
             fontSize: "clamp(8rem, 18vw, 18rem)",
             color: "transparent",
-            WebkitTextStroke: "1px rgba(245,216,0,0.25)",
+            WebkitTextStroke: "1px rgba(232,83,14,0.25)",
           }}
         >
           24
