@@ -41,7 +41,7 @@ const HeroSection = () => {
         <span
           className="w-px h-12 block"
           style={{
-            background: "linear-gradient(to bottom, hsl(51 100% 48%), transparent)",
+            background: "linear-gradient(to bottom, hsl(21 90% 48%), transparent)",
             animation: "pulse-line 2s ease-in-out infinite",
           }}
         />
