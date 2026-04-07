@@ -12,14 +12,6 @@ const HoursSection = () => {
           du åka?
         </h2>
 
-        <div className="p-1 border-2 border-sus-bg inline-block mt-6">
-          <a
-            href="#"
-            className="block bg-sus-bg text-sus-yellow px-10 py-4 font-display text-xl tracking-[0.15em] no-underline transition-colors duration-200 hover:bg-transparent hover:text-sus-bg"
-          >
-            BOKA TID →
-          </a>
-        </div>
       </div>
 
       <div>
