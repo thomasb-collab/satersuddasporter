@@ -22,7 +22,7 @@ const RulesSection = () => {
             >
               {r.num}
             </div>
-            <p className="text-sm leading-[1.75]" style={{ color: "rgba(245,240,232,0.65)" }}>
+            <p className="text-sm leading-[1.75] font-normal" style={{ color: "rgba(245,240,232,0.65)" }}>
               {r.text}
             </p>
           </div>
