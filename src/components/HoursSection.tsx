@@ -1,33 +1,71 @@
 const schedule = [
-  { day: "Alla åkare", time: "07:00 – 17:00" },
-  { day: "Erfarna åkare", time: "17:00 – 22:00" },
+  { label: "Alla åkare", time: "07:00 – 17:00" },
+  { label: "Erfarna åkare", time: "17:00 – 22:00" },
 ];
 
 const HoursSection = () => {
   return (
-    <section className="bg-sus-yellow text-sus-bg grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
-      <div>
-        <p className="text-[0.65rem] tracking-[0.4em] uppercase mb-2 font-bold" style={{ color: "rgba(13,13,13,0.5)" }}>Öppettider</p>
-        <h2 className="font-display text-sus-bg mb-8" style={{ fontSize: "clamp(3rem, 7vw, 6rem)", lineHeight: 1 }}>
-          du åka?
-        </h2>
+    <section
+      className="relative bg-background overflow-hidden"
+      style={{ padding: "clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 6rem)" }}
+    >
+      {/* Decorative border top */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-border" />
 
-      </div>
+      <div className="max-w-5xl mx-auto">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+          <div>
+            <p className="label-text">Öppettider</p>
+            <h2
+              className="font-display text-foreground"
+              style={{ fontSize: "clamp(4rem, 9vw, 8rem)", lineHeight: 0.9 }}
+            >
+              NÄR KAN
+              <br />
+              DU ÅKA?
+            </h2>
+          </div>
+          <p
+            className="text-muted-foreground text-sm leading-relaxed max-w-xs tracking-wide"
+            style={{ letterSpacing: "0.03em" }}
+          >
+            Parken är öppen alla dagar. Nybörjare och mindre barn kan med fördel
+            åka på förmiddagarna.
+          </p>
+        </div>
 
-      <div>
-        <table className="w-full border-collapse">
-          <tbody>
-            {schedule.map((s, i) => (
-              <tr key={i} className={i < schedule.length - 1 ? "border-b" : ""} style={{ borderColor: "rgba(13,13,13,0.15)" }}>
-                <td className="py-4 text-sm tracking-[0.05em]">{s.day}</td>
-                <td className="py-4 text-right font-display text-2xl tracking-[0.1em]">{s.time}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {/* Schedule cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {schedule.map((s, i) => (
+            <div
+              key={i}
+              className={`relative p-8 md:p-10 border border-border transition-colors hover:border-primary/40 group ${
+                i === 0 ? "bg-card" : "bg-muted"
+              }`}
+            >
+              {/* Accent line */}
+              <div
+                className={`absolute top-0 left-0 w-full h-[3px] ${
+                  i === 0 ? "bg-primary" : "bg-accent"
+                }`}
+              />
 
-        <div className="mt-6 p-5 text-sm leading-[1.7] tracking-[0.03em]" style={{ background: "rgba(13,13,13,0.1)" }}>
-          Parken är öppen alla dagar. Nybörjare och mindre barn kan med fördel åka på förmiddagarna då det brukar vara lite lugnare i parken.
+              <p
+                className="text-xs tracking-[0.35em] uppercase mb-6"
+                style={{ color: "hsl(var(--muted-foreground))" }}
+              >
+                {s.label}
+              </p>
+
+              <p
+                className="font-display text-foreground tracking-wider"
+                style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", lineHeight: 1 }}
+              >
+                {s.time}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
