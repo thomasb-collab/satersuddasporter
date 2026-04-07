@@ -19,7 +19,7 @@ const RulesSection = () => {
           <div key={i} className="bg-sus-concrete p-8 relative">
             <div
               className="font-display text-7xl leading-none mb-4"
-              style={{ color: "transparent", WebkitTextStroke: "1px rgba(245,216,0,0.3)" }}
+              style={{ color: "transparent", WebkitTextStroke: "1px rgba(232,83,14,0.3)" }}
             >
               {r.num}
             </div>

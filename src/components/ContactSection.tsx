@@ -59,7 +59,7 @@ const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-6 px-6 py-2.5 border text-sus-yellow no-underline text-[0.7rem] tracking-[0.25em] uppercase transition-colors duration-200 hover:bg-sus-yellow/10"
-            style={{ borderColor: "rgba(245,216,0,0.4)" }}
+            style={{ borderColor: "rgba(232,83,14,0.4)" }}
           >
             Öppna karta →
           </a>

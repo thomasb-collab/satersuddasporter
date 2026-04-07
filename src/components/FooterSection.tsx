@@ -1,7 +1,7 @@
 const FooterSection = () => {
   return (
     <>
-      <div className="h-[2px]" style={{ background: "linear-gradient(to right, hsl(51 100% 48%), hsl(11 82% 49%), transparent)" }} />
+      <div className="h-[2px]" style={{ background: "linear-gradient(to right, hsl(21 90% 48%), hsl(11 82% 49%), transparent)" }} />
       <footer className="bg-sus-bg py-12 flex flex-wrap justify-between items-center gap-4" style={{ padding: "3rem clamp(1.5rem, 5vw, 6rem)" }}>
         <div className="font-display text-2xl tracking-[0.1em] text-sus-white">
           SÄTERS <span className="text-sus-yellow">UDDA</span> SPORTER

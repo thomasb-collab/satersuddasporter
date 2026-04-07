@@ -36,8 +36,8 @@ const AboutSection = () => {
               key={i}
               className="border p-8 transition-colors duration-300 hover:border-sus-yellow"
               style={{
-                borderColor: "rgba(245,216,0,0.2)",
-                background: "rgba(245,216,0,0.03)",
+                borderColor: "rgba(232,83,14,0.2)",
+                background: "rgba(232,83,14,0.03)",
               }}
             >
               <div className="font-display text-6xl text-sus-yellow leading-none">{s.num}</div>
