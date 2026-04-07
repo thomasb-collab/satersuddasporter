@@ -5,6 +5,7 @@ const rules = [
   { num: "04", text: "Inga motordrivna fordon är tillåtna." },
   { num: "05", text: "Håll parken ren och fin-ta hand om ditt skräp." },
   { num: "06", text: "All skadegörelse och klotter polisanmäls! Det är föreningens medlemmar som får betala." },
+  { num: "07", text: "Alla typer av handtag, pegs och trampor ska vara av plast, annars förstör de ytan." },
 ];
 
 const RulesSection = () => {
