@@ -19,23 +19,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Scroll hint */}
-      <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[0.7rem] tracking-[0.3em] uppercase flex flex-col items-center gap-2 opacity-0"
-        style={{
-          color: "rgba(245,240,232,0.3)",
-          animation: "fadeUp 0.8s ease forwards 1s",
-        }}
-      >
-        Scrolla ner
-        <span
-          className="w-px h-12 block"
-          style={{
-            background: "linear-gradient(to bottom, hsl(21 90% 48%), transparent)",
-            animation: "pulse-line 2s ease-in-out infinite",
-          }}
-        />
-      </div>
     </section>
   );
 };
