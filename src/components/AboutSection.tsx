@@ -1,9 +1,6 @@
+import skateparkBowl from "@/assets/skatepark-bowl.jpeg";
+
 const AboutSection = () => {
-  const stats = [
-    { num: "2400", label: "Kvm totalyta" },
-    { num: "12", label: "Unika zoner" },
-    { num: "350+", label: "Medlemmar" },
-    { num: "6", label: "Sporter" },
   ];
 
   return (
