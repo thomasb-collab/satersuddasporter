@@ -1,8 +1,6 @@
 import skateparkBowl from "@/assets/skatepark-bowl.jpeg";
 
 const AboutSection = () => {
-  ];
-
   return (
     <section className="bg-sus-mid grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
       <div>
@@ -17,34 +15,12 @@ const AboutSection = () => {
         </p>
       </div>
 
-      <div className="relative">
-        <span
-          className="font-display leading-none pointer-events-none select-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[55%] hidden md:block"
-          style={{
-            fontSize: "clamp(8rem, 18vw, 18rem)",
-            color: "transparent",
-            WebkitTextStroke: "1px rgba(232,83,14,0.25)",
-          }}
-        >
-          24
-        </span>
-        <div className="grid grid-cols-2 gap-6 relative z-10">
-          {stats.map((s, i) => (
-            <div
-              key={i}
-              className="border p-8 transition-colors duration-300 hover:border-sus-yellow"
-              style={{
-                borderColor: "rgba(232,83,14,0.2)",
-                background: "rgba(232,83,14,0.03)",
-              }}
-            >
-              <div className="font-display text-6xl text-sus-yellow leading-none">{s.num}</div>
-              <div className="text-[0.7rem] tracking-[0.2em] uppercase mt-1" style={{ color: "rgba(245,240,232,0.5)" }}>
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="relative overflow-hidden rounded-lg">
+        <img
+          src={skateparkBowl}
+          alt="Skateboardåkare i Pelleparken"
+          className="w-full h-full object-cover aspect-[4/5]"
+        />
       </div>
     </section>
   );
