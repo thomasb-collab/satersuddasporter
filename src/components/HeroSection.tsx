@@ -17,16 +17,6 @@ const HeroSection = () => {
           className="max-w-[min(90vw,800px)] mx-auto opacity-0"
           style={{ animation: "fadeUp 0.8s ease forwards 0.4s" }}
         />
-        <p
-          className="font-mono uppercase tracking-[0.1em] mt-8 opacity-0"
-          style={{
-            fontSize: "clamp(0.8rem, 2vw, 1.1rem)",
-            color: "rgba(245,240,232,0.55)",
-            animation: "fadeUp 0.8s ease forwards 0.6s",
-          }}
-        >
-          Skateparken som blev något mer
-        </p>
       </div>
 
       {/* Scroll hint */}
