@@ -55,7 +55,7 @@ const ContactSection = () => {
             783 30 Säter, Dalarna
           </div>
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/2mc6CeVs7bobiUY99"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-6 px-6 py-2.5 border text-sus-yellow no-underline text-[0.7rem] tracking-[0.25em] uppercase transition-colors duration-200 hover:bg-sus-yellow/10"
