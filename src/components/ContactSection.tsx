@@ -49,7 +49,7 @@ const ContactSection = () => {
         <div className="relative z-10 text-center">
           <div className="text-5xl mb-4">📍</div>
           <div className="font-display text-2xl text-sus-yellow tracking-[0.1em] mb-2">
-            Industrigatan 14
+            Kungsvägen 20
           </div>
           <div className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(245,240,232,0.4)" }}>
             783 30 Säter, Dalarna
