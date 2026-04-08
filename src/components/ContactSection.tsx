@@ -52,7 +52,7 @@ const ContactSection = () => {
             Kungsvägen 20
           </div>
           <div className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(245,240,232,0.4)" }}>
-            783 30 Säter, Dalarna
+            783 35 Säter, Dalarna
           </div>
           <a
             href="https://maps.app.goo.gl/2mc6CeVs7bobiUY99"
