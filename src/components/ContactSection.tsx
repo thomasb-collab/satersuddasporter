@@ -1,5 +1,5 @@
 const contactDetails = [
-  { key: "Adress", val: "Industrigatan 14, 783 30 Säter" },
+  { key: "Adress", val: "Kungsvägen 20, 783 35 Säter" },
   { key: "Telefon", val: "0225-XXX XX", link: "tel:0225-XXXXX" },
   { key: "E-post", val: "hej@satersuddasporter.se", link: "mailto:hej@satersuddasporter.se" },
   { key: "Instagram", val: "@satersudda", link: "https://instagram.com" },
