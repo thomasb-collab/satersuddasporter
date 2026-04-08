@@ -1,5 +1,5 @@
 const contactDetails = [
-  { key: "Adress", val: "Industrigatan 14, 783 30 Säter" },
+  { key: "Adress", val: "Kungsvägen 20, 783 35 Säter" },
   { key: "Telefon", val: "0225-XXX XX", link: "tel:0225-XXXXX" },
   { key: "E-post", val: "hej@satersuddasporter.se", link: "mailto:hej@satersuddasporter.se" },
   { key: "Instagram", val: "@satersudda", link: "https://instagram.com" },
@@ -49,10 +49,10 @@ const ContactSection = () => {
         <div className="relative z-10 text-center">
           <div className="text-5xl mb-4">📍</div>
           <div className="font-display text-2xl text-sus-yellow tracking-[0.1em] mb-2">
-            Industrigatan 14
+            Kungsvägen 20
           </div>
           <div className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(245,240,232,0.4)" }}>
-            783 30 Säter, Dalarna
+            783 35 Säter, Dalarna
           </div>
           <a
             href="https://maps.app.goo.gl/2mc6CeVs7bobiUY99"
