@@ -1,15 +1,13 @@
 const TickerSection = () => {
   const items = [
     "SKATEBOARD",
-    "PARKOUR",
-    "FRISBEEGOLF",
-    "SLACKLINE",
-    "KENDAMA",
+    "BMX",
+    "KICKBIKE",
+    "INLINES",
     "SKATEBOARD",
-    "PARKOUR",
-    "FRISBEEGOLF",
-    "SLACKLINE",
-    "KENDAMA",
+    "BMX",
+    "KICKBIKE",
+    "INLINES",
   ];
 
   return (
