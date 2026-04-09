@@ -26,11 +26,6 @@ const MembershipSection = () => {
         </div>
       </div>
 
-      <a href="#" className="inline-block border-[3px] border-sus-white p-2 no-underline group">
-        <span className="block bg-sus-white text-sus-red py-5 px-16 font-display text-2xl tracking-[0.2em] transition-colors duration-200 group-hover:bg-transparent group-hover:text-sus-white">
-          BLI MEDLEM
-        </span>
-      </a>
     </section>
   );
 };
