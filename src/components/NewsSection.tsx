@@ -54,6 +54,14 @@ const NewsSection = () => {
               <h3 className="font-display text-xl mb-3 leading-tight">
                 {item.title}
               </h3>
+              {item.image_url && (
+                <img
+                  src={item.image_url}
+                  alt={item.title}
+                  className="w-full h-40 object-cover rounded mb-3"
+                  loading="lazy"
+                />
+              )}
               <p
                 className="text-sm leading-relaxed flex-1"
                 style={{ color: "rgba(245,240,232,0.7)" }}

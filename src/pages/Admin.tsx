@@ -21,6 +21,7 @@ const Admin = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
+  const [imageFile, setImageFile] = useState<File | null>(null);
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -77,11 +78,31 @@ const Admin = () => {
   const handleCreateNews = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!session) return;
+
+    let image_url: string | null = null;
+
+    if (imageFile) {
+      const fileExt = imageFile.name.split(".").pop();
+      const filePath = `${session.user.id}/${Date.now()}.${fileExt}`;
+      const { error: uploadError } = await supabase.storage
+        .from("news-images")
+        .upload(filePath, imageFile);
+      if (uploadError) {
+        toast({ title: "Kunde inte ladda upp bild", description: uploadError.message, variant: "destructive" });
+        return;
+      }
+      const { data: urlData } = supabase.storage
+        .from("news-images")
+        .getPublicUrl(filePath);
+      image_url = urlData.publicUrl;
+    }
+
     const { error } = await supabase.from("news").insert({
       title,
       content,
       author,
       user_id: session.user.id,
+      image_url,
     });
     if (error) {
       toast({ title: "Kunde inte skapa nyhet", description: error.message, variant: "destructive" });
@@ -90,6 +111,7 @@ const Admin = () => {
       setTitle("");
       setContent("");
       setAuthor("");
+      setImageFile(null);
       setShowForm(false);
       fetchNews();
     }
@@ -200,6 +222,14 @@ const Admin = () => {
               value={author}
               onChange={(e) => setAuthor(e.target.value)}
             />
+            <div>
+              <label className="text-sm text-muted-foreground mb-1 block">Bild (valfritt)</label>
+              <Input
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImageFile(e.target.files?.[0] || null)}
+              />
+            </div>
             <div className="flex gap-2">
               <Button type="submit">Publicera</Button>
               <Button type="button" variant="outline" onClick={() => setShowForm(false)}>
@@ -237,6 +267,9 @@ const Admin = () => {
                   </time>
                 </div>
                 <h3 className="font-display text-lg">{item.title}</h3>
+                {item.image_url && (
+                  <img src={item.image_url} alt="" className="w-full max-h-32 object-cover rounded mt-2" />
+                )}
                 <p className="text-sm text-muted-foreground line-clamp-2 mt-1">{item.content}</p>
               </div>
               <div className="flex gap-1 shrink-0">
