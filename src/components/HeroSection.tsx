@@ -9,7 +9,7 @@ const HeroSection = () => {
           className="font-mono text-xs tracking-[0.35em] uppercase text-sus-yellow mb-6 opacity-0"
           style={{ animation: "fadeUp 0.8s ease forwards 0.2s" }}
         >
-          Säter, Dalarna — Est. 2024
+          {"\n"}
         </p>
         <img
           src={susLogo}
