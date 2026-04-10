@@ -1,8 +1,7 @@
 const contactDetails = [
   { key: "Adress", val: "Kungsvägen 20, 783 35 Säter" },
-  { key: "Telefon", val: "0225-XXX XX", link: "tel:0225-XXXXX" },
-  { key: "E-post", val: "hej@satersuddasporter.se", link: "mailto:hej@satersuddasporter.se" },
-  { key: "Instagram", val: "@satersudda", link: "https://instagram.com" },
+  { key: "E-post", val: "foreningensus@gmail.com", link: "mailto:foreningensus@gmail.com" },
+  { key: "Facebook", val: "Säter Udda Sporter", link: "https://www.facebook.com/Satersuddasporter/" },
 ];
 
 const ContactSection = () => {
