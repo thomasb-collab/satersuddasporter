@@ -44,7 +44,7 @@ const AboutSection = () => {
           >
             Säters Udda Sporter är en ideell förening med hjärtat i Säter,
             Dalarna. Vi driver Pelleparken – Säters enda skatepark – och samlar
-            åkare i alla åldrar och på alla nivåer under ett tak.
+            åkare i alla åldrar och på alla nivåer på samma ställe.
           </p>
 
           <p
