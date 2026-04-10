@@ -5,7 +5,7 @@ const schedule = [
 
 const skateOnly = [
   { label: "Tisdagar", time: "17:00 – 20:00" },
-  { label: "Lördagar", time: "16:00 – 20:00" },
+  { label: "Lördagar", time: "17:00 – 21:00" },
 ];
 
 const HoursSection = () => {
