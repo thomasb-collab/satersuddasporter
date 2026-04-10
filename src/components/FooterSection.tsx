@@ -9,18 +9,6 @@ const FooterSection = () => {
         <div className="text-[0.7rem] tracking-[0.15em] uppercase" style={{ color: "rgba(245,240,232,0.3)" }}>
           © 2024 Säters Udda Sporter. Alla rättigheter reserverade.
         </div>
-        <div className="flex gap-6">
-          {["Instagram", "TikTok", "YouTube"].map((s) => (
-            <a
-              key={s}
-              href="#"
-              className="text-[0.7rem] tracking-[0.2em] uppercase no-underline transition-colors duration-200 hover:text-sus-yellow"
-              style={{ color: "rgba(245,240,232,0.4)" }}
-            >
-              {s}
-            </a>
-          ))}
-        </div>
       </footer>
     </>
   );
