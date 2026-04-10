@@ -3,6 +3,11 @@ const schedule = [
   { label: "Erfarna åkare", time: "17:00 – 22:00" },
 ];
 
+const skateOnly = [
+  { label: "Tisdagar", time: "17:00 – 20:00" },
+  { label: "Lördagar", time: "16:00 – 20:00" },
+];
+
 const HoursSection = () => {
   return (
     <section
