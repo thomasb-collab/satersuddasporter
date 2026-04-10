@@ -72,6 +72,44 @@ const HoursSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Skateboard only */}
+        <div className="mt-12">
+          <p
+            className="text-xs tracking-[0.35em] uppercase mb-4"
+            style={{ color: "hsl(var(--muted-foreground))" }}
+          >
+            Enbart skateboard
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {skateOnly.map((s, i) => (
+              <div
+                key={i}
+                className="relative p-8 md:p-10 border border-border transition-colors hover:border-primary/40 bg-card"
+              >
+                <div className="absolute top-0 left-0 w-full h-[3px] bg-primary/60" />
+                <p
+                  className="text-xs tracking-[0.35em] uppercase mb-6"
+                  style={{ color: "hsl(var(--muted-foreground))" }}
+                >
+                  {s.label}
+                </p>
+                <p
+                  className="font-display text-foreground tracking-wider"
+                  style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", lineHeight: 1 }}
+                >
+                  {s.time}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p
+            className="text-muted-foreground text-sm mt-4 tracking-wide"
+            style={{ letterSpacing: "0.03em" }}
+          >
+            Under dessa tider är det enbart tillåtet att åka skateboard i parken.
+          </p>
+        </div>
       </div>
     </section>
   );
