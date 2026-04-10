@@ -31,7 +31,7 @@ const HoursSection = () => {
             style={{ letterSpacing: "0.03em" }}
           >
             Parken är öppen alla dagar. Nybörjare och mindre barn kan med fördel
-            åka på förmiddagarna.
+            åka på förmiddagarna då det oftast är lite lugnare då.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ const FooterSection = () => {
           SÄTERS <span className="text-sus-yellow">UDDA</span> SPORTER
         </div>
         <div className="text-[0.7rem] tracking-[0.15em] uppercase" style={{ color: "rgba(245,240,232,0.3)" }}>
-          © 2024 Säters Udda Sporter. Alla rättigheter reserverade.
+          © 2026 SÄTERS UDDA SPORTER. ALLA RÄTTIGHETER RESERVERADE.
         </div>
       </footer>
     </>
