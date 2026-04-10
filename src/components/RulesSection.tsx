@@ -1,3 +1,5 @@
+import forbudsskylt from "@/assets/forbudsskylt.png";
+
 const rules = [
   { num: "01", text: "Parken är en avancerad idrotts- och aktivitetsyta. All aktivitet sker på egen risk." },
   { num: "02", text: "Hjälm är obligatoriskt för åkare under 16 år. Vi uppmanar alla att skydda skallen." },
@@ -67,6 +69,16 @@ const RulesSection = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Förbudsskylt */}
+        <div className="mt-16 flex justify-center">
+          <img
+            src={forbudsskylt}
+            alt="Ej tillåtet i parken: Trehjulig sparkcykel och vikbar sparkcykel är inte godkända för åkning i parken."
+            className="w-full max-w-lg rounded"
+            style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
+          />
         </div>
       </div>
     </section>
