@@ -63,8 +63,8 @@ const RulesSection = () => {
                 {r.num}
               </span>
               <p
-                className="text-sm md:text-base leading-relaxed pt-1"
-                style={{ color: "rgba(0,0,0,0.75)", maxWidth: "40rem" }}
+                className="text-sm md:text-base leading-relaxed pt-1 font-semibold"
+                style={{ color: "rgba(0,0,0,0.9)", maxWidth: "40rem" }}
               >
                 {r.text}
               </p>
@@ -90,8 +90,8 @@ const RulesSection = () => {
               />
             </div>
             <p
-              className="text-sm md:text-base leading-relaxed"
-              style={{ color: "rgba(0,0,0,0.75)", maxWidth: "30rem" }}
+              className="text-sm md:text-base leading-relaxed font-semibold"
+              style={{ color: "rgba(0,0,0,0.9)", maxWidth: "30rem" }}
             >
               Trehjuliga samt vikbara sparkcyklar är inte godkända för åkning i parken.
               De är inte konstruerade för parkåkning och kan gå sönder och orsaka skador.
