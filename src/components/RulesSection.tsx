@@ -1,4 +1,5 @@
-import forbudsskylt from "@/assets/forbudsskylt.png";
+import trehjulig from "@/assets/trehjulig.png";
+import vikbar from "@/assets/vikbar.png";
 
 const rules = [
   { num: "01", text: "Parken är en avancerad idrotts- och aktivitetsyta. All aktivitet sker på egen risk." },
@@ -71,14 +72,31 @@ const RulesSection = () => {
           ))}
         </div>
 
-        {/* Förbudsskylt */}
-        <div className="mt-16 flex justify-center">
-          <img
-            src={forbudsskylt}
-            alt="Ej tillåtet i parken: Trehjulig sparkcykel och vikbar sparkcykel är inte godkända för åkning i parken."
-            className="w-full max-w-lg rounded"
-            style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
-          />
+        {/* Ej tillåtna fordon */}
+        <div className="mt-16">
+          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+            <div className="flex gap-4 shrink-0">
+              <img
+                src={trehjulig}
+                alt="Trehjulig sparkcykel – ej tillåten"
+                className="w-32 md:w-40 rounded"
+                style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
+              />
+              <img
+                src={vikbar}
+                alt="Vikbar sparkcykel – ej tillåten"
+                className="w-32 md:w-40 rounded"
+                style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.25)" }}
+              />
+            </div>
+            <p
+              className="text-sm md:text-base leading-relaxed"
+              style={{ color: "rgba(0,0,0,0.75)", maxWidth: "30rem" }}
+            >
+              Trehjuliga samt vikbara sparkcyklar är inte godkända för åkning i parken.
+              De är inte konstruerade för parkåkning och kan gå sönder och orsaka skador.
+            </p>
+          </div>
         </div>
       </div>
     </section>
