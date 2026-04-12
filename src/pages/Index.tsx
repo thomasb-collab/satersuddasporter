@@ -8,6 +8,7 @@ import HoursSection from "@/components/HoursSection";
 import RulesSection from "@/components/RulesSection";
 import MembershipSection from "@/components/MembershipSection";
 import ContactSection from "@/components/ContactSection";
+import SponsorsSection from "@/components/SponsorsSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <RulesSection />
       <MembershipSection />
       <ContactSection />
+      <SponsorsSection />
       <FooterSection />
     </div>
   );
