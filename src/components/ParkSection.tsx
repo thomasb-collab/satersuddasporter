@@ -6,12 +6,16 @@ import parkStreet from "@/assets/park-street.jpg";
 import parkBowl from "@/assets/park-bowl.jpg";
 import parkFlat from "@/assets/park-flat.jpg";
 import parkBowl2 from "@/assets/park-bowl2.jpg";
+import zoneBgBowl from "@/assets/zone-bg-bowl.jpg";
+import zoneBgSnake from "@/assets/zone-bg-snake.jpg";
+import zoneBgStreet from "@/assets/zone-bg-street.jpg";
+import zoneBgRamp from "@/assets/zone-bg-ramp.jpg";
 
 const zones = [
-  { icon: "🛹", name: "Bowlen", desc: "Klassisk betongbowl med pool coping. Från snake run till deep end — allt handgjutet." },
-  { icon: "🏃", name: "Snaken", desc: "En slingrande bana att köra i flow. Perfekt för att bygga hastighet och pumpa kurvor." },
-  { icon: "🥏", name: "Streetyta", desc: "Klassiska gatuelement – ledges, rails och flatmark. Här tränar du tricks och grinds i urban miljö." },
-  { icon: "🤸", name: "Ramperna", desc: "Kör transition i någon av våra tre ramper. Vi har en mindre ramp och två större för mer erfarna åkare." },
+  { icon: "🛹", name: "Bowlen", desc: "Klassisk betongbowl med pool coping. Från snake run till deep end — allt handgjutet.", bg: zoneBgBowl },
+  { icon: "🏃", name: "Snaken", desc: "En slingrande bana att köra i flow. Perfekt för att bygga hastighet och pumpa kurvor.", bg: zoneBgSnake },
+  { icon: "🥏", name: "Streetyta", desc: "Klassiska gatuelement – ledges, rails och flatmark. Här tränar du tricks och grinds i urban miljö.", bg: zoneBgStreet },
+  { icon: "🤸", name: "Ramperna", desc: "Kör transition i någon av våra tre ramper. Vi har en mindre ramp och två större för mer erfarna åkare.", bg: zoneBgRamp },
 ];
 
 const galleryImages = [
@@ -43,14 +47,23 @@ const ParkSection = () => {
         {zones.map((z, i) => (
           <div
             key={i}
-            className="bg-sus-concrete p-10 relative overflow-hidden cursor-default transition-colors duration-300 hover:bg-[#333] group"
+            className="relative p-10 overflow-hidden cursor-default group min-h-[200px]"
           >
+            <img
+              src={z.bg}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300" />
             <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-sus-yellow origin-left scale-x-0 transition-transform duration-400 group-hover:scale-x-100" />
             
-            <div className="font-display text-3xl tracking-[0.05em] mb-3 text-sus-white">{z.name}</div>
-            <p className="text-xs leading-[1.7] tracking-[0.02em]" style={{ color: "rgba(245,240,232,0.5)" }}>
-              {z.desc}
-            </p>
+            <div className="relative z-10">
+              <div className="font-display text-3xl tracking-[0.05em] mb-3 text-sus-white">{z.name}</div>
+              <p className="text-xs leading-[1.7] tracking-[0.02em]" style={{ color: "rgba(245,240,232,0.7)" }}>
+                {z.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>
