@@ -1,6 +1,6 @@
 const MembershipSection = () => {
   return (
-    <section className="bg-background text-center" style={{ padding: "clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 6rem)" }}>
+    <section id="medlemskap" className="bg-background text-center scroll-mt-12" style={{ padding: "clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 6rem)" }}>
       <p className="label-text">STÖD OSS</p>
       <h2 className="font-display text-sus-white" style={{ fontSize: "clamp(3.5rem, 9vw, 8rem)", lineHeight: 1 }}>
         Bli medlem

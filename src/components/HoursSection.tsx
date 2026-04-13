@@ -11,7 +11,8 @@ const skateOnly = [
 const HoursSection = () => {
   return (
     <section
-      className="relative bg-background overflow-hidden"
+      id="oppettider"
+      className="relative bg-background overflow-hidden scroll-mt-12"
       style={{ padding: "clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 6rem)" }}
     >
       {/* Decorative border top */}

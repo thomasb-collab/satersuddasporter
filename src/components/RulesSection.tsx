@@ -14,7 +14,8 @@ const rules = [
 const RulesSection = () => {
   return (
     <section
-      className="relative"
+      id="regler"
+      className="relative scroll-mt-12"
       style={{
         padding: "clamp(5rem, 10vw, 10rem) clamp(1.5rem, 5vw, 6rem)",
         background: "hsl(var(--primary))",

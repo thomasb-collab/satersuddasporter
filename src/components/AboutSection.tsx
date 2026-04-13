@@ -3,7 +3,8 @@ import skateparkBowl from "@/assets/skatepark-bowl.jpeg";
 const AboutSection = () => {
   return (
     <section
-      className="bg-sus-mid relative overflow-hidden"
+      id="om-oss"
+      className="bg-sus-mid relative overflow-hidden scroll-mt-12"
       style={{ padding: "clamp(5rem, 10vw, 10rem) 0" }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-5 items-center gap-0">
