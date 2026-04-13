@@ -22,7 +22,7 @@ const HoursSection = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="label-text">Öppettider</p>
+            <p className="label-text mb-4">Öppettider</p>
             <h2
               className="font-display text-foreground"
               style={{ fontSize: "clamp(4rem, 9vw, 8rem)", lineHeight: 0.9 }}
