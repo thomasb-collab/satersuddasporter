@@ -6,7 +6,7 @@ const contactDetails = [
 
 const ContactSection = () => {
   return (
-    <section className="bg-sus-mid grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
+    <section id="kontakt" className="bg-sus-mid grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start scroll-mt-12" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
       <div>
         <p className="label-text">Kontakt</p>
         <h2 className="section-title">Hitta<br />hit</h2>

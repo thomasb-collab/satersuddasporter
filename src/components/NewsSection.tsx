@@ -25,7 +25,8 @@ const NewsSection = () => {
 
   return (
     <section
-      className="bg-background relative"
+      id="nyheter"
+      className="bg-background relative scroll-mt-12"
       style={{ padding: "clamp(4rem, 8vw, 8rem) 0" }}
     >
       <div

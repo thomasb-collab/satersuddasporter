@@ -32,7 +32,7 @@ const ParkSection = () => {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
   return (
-    <section className="bg-sus-mid" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
+    <section id="parken" className="bg-sus-mid scroll-mt-12" style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}>
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
         <div>
           <p className="label-text">PELLEPARKEN</p>

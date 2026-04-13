@@ -3,7 +3,8 @@ import sponsorsImg from "@/assets/sponsors.png";
 const SponsorsSection = () => {
   return (
     <section
-      className="bg-sus-bg"
+      id="sponsorer"
+      className="bg-sus-bg scroll-mt-12"
       style={{ padding: "clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 6rem)" }}
     >
       <div className="text-center mb-12">
