@@ -25,7 +25,7 @@ const RulesSection = () => {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <p
-          className="text-[0.65rem] tracking-[0.4em] uppercase mb-2 font-bold"
+          className="text-[0.65rem] tracking-[0.4em] uppercase mb-4 font-bold"
           style={{ color: "rgba(0,0,0,0.45)" }}
         >
           Regler
