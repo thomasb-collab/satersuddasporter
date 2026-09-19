@@ -38,31 +38,24 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="bg-sus-concrete aspect-[4/3] flex items-center justify-center relative overflow-hidden">
-        <span
-          className="font-display text-[8rem] absolute tracking-[0.1em] select-none"
-          style={{ color: "rgba(245,240,232,0.04)" }}
+      <div className="bg-sus-concrete aspect-[4/3] relative overflow-hidden">
+        <iframe
+          title="Karta till Pelleparken, Kungsvägen 20, Säter"
+          src="https://www.google.com/maps?q=Kungsv%C3%A4gen+20,+783+35+S%C3%A4ter&output=embed"
+          className="absolute inset-0 w-full h-full border-0"
+          style={{ filter: "grayscale(0.3) contrast(1.1)" }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+        <a
+          href="https://maps.app.goo.gl/2mc6CeVs7bobiUY99"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-4 z-10 inline-block px-6 py-2.5 border text-sus-yellow no-underline text-[0.7rem] tracking-[0.25em] uppercase transition-colors duration-200 hover:bg-sus-yellow/10 bg-sus-mid/90 backdrop-blur-sm"
+          style={{ borderColor: "rgba(232,83,14,0.4)" }}
         >
-          SÄTER
-        </span>
-        <div className="relative z-10 text-center">
-          <div className="text-5xl mb-4">📍</div>
-          <div className="font-display text-2xl text-sus-yellow tracking-[0.1em] mb-2">
-            Kungsvägen 20
-          </div>
-          <div className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(245,240,232,0.4)" }}>
-            783 35 Säter, Dalarna
-          </div>
-          <a
-            href="https://maps.app.goo.gl/2mc6CeVs7bobiUY99"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-6 px-6 py-2.5 border text-sus-yellow no-underline text-[0.7rem] tracking-[0.25em] uppercase transition-colors duration-200 hover:bg-sus-yellow/10"
-            style={{ borderColor: "rgba(232,83,14,0.4)" }}
-          >
-            Öppna karta →
-          </a>
-        </div>
+          Öppna karta →
+        </a>
       </div>
     </section>
   );
