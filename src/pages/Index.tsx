@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import TickerSection from "@/components/TickerSection";
 import ShortcutMenu from "@/components/ShortcutMenu";
 import AboutSection from "@/components/AboutSection";
-import NewsSection from "@/components/NewsSection";
+import FacebookFeed from "@/components/FacebookFeed";
 import ParkSection from "@/components/ParkSection";
 
 import HoursSection from "@/components/HoursSection";
@@ -19,7 +19,7 @@ const Index = () => {
       <TickerSection />
       <ShortcutMenu />
       <AboutSection />
-      <NewsSection />
+      <FacebookFeed />
       <ParkSection />
       
       <HoursSection />
