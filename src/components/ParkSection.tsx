@@ -6,6 +6,13 @@ import parkStreet from "@/assets/park-street.jpg";
 import parkBowl from "@/assets/park-bowl.jpg";
 import parkFlat from "@/assets/park-flat.jpg";
 import parkBowl2 from "@/assets/park-bowl2.jpg";
+import parkSunsetWide from "@/assets/park-sunset-wide.jpg";
+import parkPalmsPortrait from "@/assets/park-palms-portrait.jpg";
+import parkOverviewAutumn from "@/assets/park-overview-autumn.jpg";
+import parkScootersPalm from "@/assets/park-scooters-palm.jpg";
+import parkScooterJump from "@/assets/park-scooter-jump.jpg";
+import parkWideRails from "@/assets/park-wide-rails.jpg";
+import parkRailStreet from "@/assets/park-rail-street.jpg";
 import zoneBgBowl from "@/assets/zone-bg-bowl.jpg";
 import zoneBgSnake from "@/assets/zone-bg-snake.jpg";
 import zoneBgStreet from "@/assets/zone-bg-street.jpg";
@@ -26,6 +33,13 @@ const galleryImages = [
   { src: parkBowl2, alt: "Bowl från sidan" },
   { src: parkRamp, alt: "Rampen" },
   { src: parkScooter, alt: "Kickbike i rampen" },
+  { src: parkSunsetWide, alt: "Parken i kvällssol" },
+  { src: parkPalmsPortrait, alt: "Palmerna i parken" },
+  { src: parkOverviewAutumn, alt: "Parken på hösten" },
+  { src: parkScootersPalm, alt: "Åkare vid palmerna" },
+  { src: parkScooterJump, alt: "Hopp i parken" },
+  { src: parkWideRails, alt: "Räls och ledges" },
+  { src: parkRailStreet, alt: "Ledge med räcke" },
 ];
 
 const ParkSection = () => {
