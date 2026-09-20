@@ -1,3 +1,5 @@
+import WeatherStatus from "@/components/WeatherStatus";
+
 const schedule = [
   { label: "Alla åkare", time: "07:00 – 17:00" },
   { label: "Erfarna åkare", time: "17:00 – 22:00" },
@@ -39,6 +41,10 @@ const HoursSection = () => {
             Parken är öppen alla dagar. Nybörjare och mindre barn kan med fördel
             åka på förmiddagarna då det oftast är lite lugnare då.
           </p>
+        </div>
+
+        <div className="mb-12">
+          <WeatherStatus />
         </div>
 
         {/* Schedule cards */}
